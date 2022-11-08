@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Docenten - Studenten Servicedesk</title>
+    <link rel="shortcut icon" href="sources/afb/favicon.png">
+    <link rel="stylesheet" href="sources/style/global.css">
+    <script src="sources/js/switch.js"></script>
+</head>
+<body>
+    <div class="navbar">
+        <div class="navcontrol">
+            <button id="leftButton" onclick="docMoveLeft()">
+                <img id="leftIMG" src="sources/afb/arrow1.png">
+            </button>
+            <button id="rightButton" onclick="docMoveRight()">
+                <img id="rightIMG" src="sources/afb/arrow2.png">
+            </button>
+        </div>
+        <div class="logoutBox">
+            <button id="logoutBox" onclick="logoutFunction()">
+                <img id="logoutIMG" src="sources/afb/logout.png">
+            </button>
+        </div>
+    </div>
+    <div id="launchContainer" class="maincontainer">
+        <div id="mainPage" class="mainContainer div_Show">
+            <h1 style="background-color: var(--nord10);">1</h1>
+        </div>
+        <div id="results_Page" class="mainContainer div_Away">
+            <h1 style="background-color: var(--nord10);">2</h1>
+        </div>
+        <div id="control_Page" class="mainContainer div_Away">
+            <h1 style="background-color: var(--nord10);">3</h1>
+        </div>
+    </div>
+
+    <div id="logout_Popup" class="popup_Default_Style div_Away">
+        <h1 class="popup_Header">Weet u zeker dat u wilt uitloggen?</h1>
+       <div class="popupNav">
+            <button onclick="logoutYes()" id="logoutYes">Ja</button>
+            <button onclick="logoutNo()" id="logoutNo">Nee</button>
+       </div> 
+    </div>
+
+    <div id="disp_move_error" class="popup_Default_Style div_Away">
+        <h1 class="popup_Header" style="margin-left: 5%;">Helaas. Dit is de laatste pagina!</h1>
+        <div class="popupNav">
+            <button onclick="errhandelendpage()" id="error-handel-okay">Oke</button>
+
+        </div>
+    </div>
+</body>
+</html>

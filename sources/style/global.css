@@ -1,0 +1,206 @@
+@import "color.css";
+
+@font-face {
+    font-family: Roboto Mono NF;
+    src: url('../font/Roboto.ttf')
+}
+
+* {
+    background-color: var(--bg);
+    font-family: Roboto Mono NF;
+    overflow: hidden;
+}
+
+body {
+    margin: none;
+}
+
+.navbar {
+    position: absolute;
+    height: 5%;
+    bottom: 0%;
+    width: 100%;
+    border: solid 0px;
+}
+
+.maincontainer {
+    position: absolute;
+    height: 95%;
+    top: 0%;
+    width: 100%;
+    border: solid 0px;
+    background-color: var(--bg);
+}
+
+.navcontrol {
+    position: relative;
+    height: 100%;
+    width: 10%;
+    border: solid  2px var(--nord10);
+    background-color: var(--nord10);
+    float: right;
+    margin-right: 5px;
+    border-radius: 25px;
+}
+
+.mainContainer {
+    position: relative;
+    display: inline-block;
+    height: 95%;
+    width: 95%;
+    border: solid 2px var(--nord10);
+    background-color: var(--nord10);
+    border-radius: 25px;
+    top: 2%;
+    left: 2%;
+}
+
+.logoutBox {
+    position: relative;
+    height: 100%;
+    width: 5%;
+    border: solid 2px var(--nord10);
+    background-color: var(--nord10);
+    float: left;
+    margin-left: 5px;
+    border-radius: 25px;
+}
+
+#logoutIMG {
+    background-color: var(--nord10);
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    top: 15%;
+    left: 35%;
+    cursor: pointer;
+}
+
+#logoutBox {
+    background-color: var(--nord10);
+    color: var(--nord10);
+    outline: none;
+    border: none;
+    padding: 0px;
+    background: none;
+}
+
+.div_Show {
+    display: inline-block;
+}
+
+.div_Away {
+    display: none;
+}
+
+#leftIMG {
+    position: relative;
+    height: 30px;
+    width: 30px;
+    left: 0%;
+    margin-left: 1%;
+    background-color: none;
+    background: none;
+    border-color: none;
+}
+
+#leftButton {
+    background-color: none;
+    position: relative;
+    cursor: pointer;
+    color: none;
+    outline: none;
+    padding: 0px;
+    background: none;
+    top: 10%;
+    left: 25%;
+    border: none;
+}
+
+#rightIMG {
+    position: relative;
+    height: 30px;
+    width: 30px;
+    right: 0%;
+    margin-right: 1%;
+    background-color: none;
+    background: none;
+    border-color: none;
+}
+
+#rightButton {
+    background-color: none;
+    position: relative;
+    cursor: pointer;
+    color: none;
+    padding: 0px;
+    background: none;
+    top: 10%;
+    right: 25%;
+    border: none;
+    float: right;
+
+}
+
+.popup_Default_Style {
+    position: absolute;
+    height: 30%;
+    width: 40%;
+    border: solid 2px var(--bg);
+    border-radius: 25px;
+    background-color: var(--bg);
+    top: 25%;
+    left: 30%;
+}
+
+.popupNav {
+    position: absolute;
+    height: 15%;
+    width: 100%;
+    display: inline-block;
+    border: 1px solid var(--nord10);
+    background-color: var(--nord10);
+    bottom: 0%;
+}
+
+.popup_Header {
+    color: var(--nord10);
+    font-size: 24px;
+    font-weight: bold;
+    position: absolute;
+    left: 15%;
+    top: 20%;
+}
+
+#logoutYes {
+    background-color: none;
+    position: relative;
+    cursor: pointer;
+    border: none;
+    background: none;
+    left: 25%;
+    font-size: 18px;
+    top: 15%;
+}
+
+#logoutNo {
+    background-color: none;
+    position: absolute;
+    cursor: pointer;
+    border: none;
+    background: none;
+    right: 25%;
+    font-size: 18px;
+    top: 15%;
+}
+
+#error-handel-okay {
+    background-color: none;
+    position: absolute;
+    background: none;
+    cursor: pointer;
+    border: none;
+    top: 15%;
+    font-size: 18px;
+    left: 48%;
+}
